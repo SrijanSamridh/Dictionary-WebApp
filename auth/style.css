@@ -1,27 +1,29 @@
-
 * {
     font-family: "Poppins", sans-serif;
 }
 
 :root {
-    --bg-color : #ae9cff;
-    --bg-container : #d0c6fd;
+    --bg-color: #ae9cff;
+    --bg-container: #hsla(251, 100%, 81%, 0.334);
     --text-color: #ffff;
 }
-
-
-/*  BEGIN: Animated Login Container */
+body{
+    background-image: url('https://media.istockphoto.com/id/1157432726/photo/texture-of-old-violet-paper-background-closeup-structure-of-dense-cardboard.jpg?s=612x612&w=0&k=20&c=De2vVGl9I3_HjqOOz-5DoKZ_4bUUbK03aBfT44NfzHo=');
+    background-size: cover;
+}
+/* BEGIN: Animated Login Container */
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh;
-    width: 50vh;
+    padding: 20px;
+    width: fit-content;
     border-radius: 20px;
     background-color: var(--bg-container);
     animation-name: slideIn;
     animation-duration: 1s;
+    margin: 15% auto;
 }
 
 @keyframes slideIn {
@@ -32,21 +34,25 @@
         transform: translateX(0);
     }
 }
-/*  END: Animated Login Container */
+/* END: Animated Login Container */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.btn{
+.btn {
     padding: 15px;
     width: 35vh;
     background-color: var(--bg-color);
     border: none;
     outline: none;
     color: #ffffff;
-    border-radius: 5px;  
+    border-radius: 5px;
     text-decoration: none;
 }
 
-.input-filed{
-    /* height: 24px; */
+.input-filed {
     width: 150px;
     margin: 8px;
     padding: 8px;

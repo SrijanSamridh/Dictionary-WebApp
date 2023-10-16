@@ -3,26 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Font Awesome -->
+    <link rel="icon" type="image/x-icon" href="assets/logo_background.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <!-- Google Fonts -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
     />
-
-    <!-- Stylesheet-->
-    <link rel="stylesheet" href="auth/style.css" />
-    <title>Dictionary</title>
+    <link rel="stylesheet" href="home/style.css" />
+    <link rel="stylesheet" href="utils/animation.css" />
+    <link rel="stylesheet" href="utils/splash.css" />
+    <title>My Dictionary App</title>
   </head>
-
   <body>
-    <a href="routers/signup.html" target="_blank" rel="noopener noreferrer">navigat to signup</a><br>
-    <a href="routers/login.html" target="_blank" rel="noopener noreferrer">navigat to login</a>
+    <div class="splash">
+      <div class="splash-content zoom-out">
+        <img src="assets/logo.png" alt="" id="logo" class="logo" />
+      </div>
+    </div>
 
-    <script src="auth/script.js"></script>
+    <!-- main content goes here (hidden initially) -->
+    <div class="main-content">
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div class="container">
+          <img src="assets/logo.png" alt="" id="logo" class="logo" onclick="location.href='#'" />
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <header class="hero">
+        <div class="container">
+          <h1>Welcome to My Dictionary App</h1>
+          <p>Your one-stop solution for all your needs.</p>
+          <div>
+            <a
+              href="routers/signup.html"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Try Now</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <h2>About Our Dictionary App</h2>
+              <h3>Welcome to our world of words.</h3>
+              <p>
+                Our dictionary app is your gateway to language exploration. It's
+                more than just definitions; it's a journey through the richness
+                of language and knowledge. We are passionate about words and
+                language, and we've designed this app to make your language
+                experience delightful and insightful.
+              </p>
+            </div>
+            <div class="about-image">
+              <img src="assets/library-5612441_1280.jpg" alt="Dictionary App" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="features">
+        <div class="container">
+          <h2>Features</h2>
+          <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <p>Contact information goes here.</p>
+        </div>
+      </section>
+    </div>
+
+    <script src="home/script.js"></script>
   </body>
 </html>

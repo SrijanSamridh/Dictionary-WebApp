@@ -1,0 +1,37 @@
+/* Define the animation */
+@keyframes zoomOut {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+/* Apply the animation to an element */
+.zoom-out {
+  animation-name: zoomOut;
+  animation-duration: 3s;
+  animation: infiniteZoom 2s infinite;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+/* Define the infinite animation */
+@keyframes infiniteZoom {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+}
+
+/* Apply the infinite animation to an element */
+.infinite-zoom {
+  animation: infiniteZoom 2s infinite;
+  animation-timing-function: ease;
+}
