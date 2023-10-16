@@ -4,7 +4,7 @@
 
 :root {
     --bg-color: #ae9cff;
-    --bg-container: #hsla(251, 100%, 81%, 0.334);
+    --bg-container: #785df563;
     --text-color: #ffff;
 }
 body{
@@ -24,6 +24,7 @@ body{
     animation-name: slideIn;
     animation-duration: 1s;
     margin: 15% auto;
+    color: white;
 }
 
 @keyframes slideIn {
