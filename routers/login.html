@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    />
+
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="../auth/style.css" />
+    <title>Dictionary</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <form method="POST" action="https://dictionary-server-six.vercel.app/auth/login">
+        <h2>Login</h2>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="input-filed"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="input-filed"
+            required
+          />
+        </div>
+        <button type="submit" id="btn" class="btn">Login</button>
+      </form>
+    </div>
+
+    <script>
+      const baseUrl = "https://dictionary-server-six.vercel.app";
+      const btn = document.getElementById("btn");
+
+      btn.addEventListener("click", (event) => {
+        event.preventDefault();
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        fetch(`${baseUrl}/auth/login`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email, password }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            alert(data.message);
+            if (data.message === "User logged in successfully!") {
+              console.log("Successful");
+              // Redirect to a dashboard or perform other actions
+              window.location.href = "dictionary.html";
+            }
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      });
+    </script>
+  </body>
+</html>

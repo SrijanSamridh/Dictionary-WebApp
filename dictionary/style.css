@@ -8,13 +8,16 @@
 *:not(i) {
     font-family: "Poppins", sans-serif;
 }
-
+:root {
+    --bg-color : #ae9cff;
+    --bg-container : #ffffff;
+}
 body {
-    background-color: #ae9cff;
+    background-color: var(--bg-color);
 }
 
 .container{
-    background-color: #ffffff;
+    background-color: var(--bg-container);
     width: 90vmin;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -37,17 +40,17 @@ body {
     width: 70%;
     border: none;
     outline: none;
-    border-bottom: 3px solid #ae9cff;
+    border-bottom: 3px solid var(--bg-color);
     font-size: 16px;
 }
  
 .search-box button{
     padding: 15px 0;
     width: 25%;
-    background-color: #ae9cff;
+    background-color: var(--bg-color);
     border: none;
     outline: none;
-    color: #ffffff;
+    color: var(--bg-container);
     border-radius: 5px;     
 }
 
@@ -70,7 +73,7 @@ body {
 
 .result button {
     background-color: transparent;
-    color: #ae9cff;
+    color: var(--bg-color);
     border: none;
     outline: none;
     font-size: 18px;
@@ -91,7 +94,7 @@ body {
 .word-example {
     color: #575a7b;
     font-style: italic;
-    border-left: 5px solid #ae9cff;
+    border-left: 5px solid var(--bg-color);
     padding-left: 20px;
     margin-top: 30px;
 }

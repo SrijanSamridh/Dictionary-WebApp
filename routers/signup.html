@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    />
+
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="../auth/style.css" />
+
+    <title>Dictionary</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <form
+        method="POST"
+        action="https://dictionary-server-six.vercel.app/auth/register"
+      >
+        <h2>Sign Up</h2>
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            class="input-filed"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="input-filed"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="input-filed"
+            required
+          />
+        </div>
+        <button type="submit" id="signup-btn" class="btn">Register</button>
+      </form>
+    </div>
+    
+    <script src="../auth/script.js"></script>
+  </body>
+</html>

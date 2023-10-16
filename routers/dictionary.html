@@ -15,14 +15,20 @@
     />
 
     <!-- Stylesheet-->
-    <link rel="stylesheet" href="auth/style.css" />
+    <link rel="stylesheet" href="../dictionary/style.css" />
+
     <title>Dictionary</title>
   </head>
-
   <body>
-    <a href="routers/signup.html" target="_blank" rel="noopener noreferrer">navigat to signup</a><br>
-    <a href="routers/login.html" target="_blank" rel="noopener noreferrer">navigat to login</a>
-
-    <script src="auth/script.js"></script>
+    <audio id="sound"></audio>
+    <div class="container">
+      <div class="search-box">
+        <input type="text" placeholder="Type the word here.." id="inp-word" />
+        <button id="search-btn">Search</button>
+      </div>
+      <div class="result" id="result"></div>
+    </div>
+    <!-- Script -->
+    <script src="../dictionary/script.js"></script>
   </body>
 </html>

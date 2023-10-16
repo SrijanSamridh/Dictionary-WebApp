@@ -1,0 +1,54 @@
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color : #ae9cff;
+    --bg-container : #d0c6fd;
+    --text-color: #ffff;
+}
+
+
+/*  BEGIN: Animated Login Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 50vh;
+    border-radius: 20px;
+    background-color: var(--bg-container);
+    animation-name: slideIn;
+    animation-duration: 1s;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+/*  END: Animated Login Container */
+
+.btn{
+    padding: 15px;
+    width: 35vh;
+    background-color: var(--bg-color);
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border-radius: 5px;  
+    text-decoration: none;
+}
+
+.input-filed{
+    /* height: 24px; */
+    width: 150px;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 20px;
+}
