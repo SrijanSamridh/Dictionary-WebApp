@@ -1,99 +1,126 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 *:not(i) {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 :root {
-    --bg-color : #ae9cff;
-    --bg-container : #ffffff;
+  --bg-color: #ae9cff;
+  --bg-container: #ffffff;
 }
 body {
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
-.container{
-    background-color: var(--bg-container);
-    width: 90vmin;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    padding: 80px 50px;
-    border-radius: 10px;
-    box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+.container {
+  background-color: var(--bg-container);
+  width: 90vmin;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 80px 50px;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
 }
 
-.search-box{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.search-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.search-box input{
-    width: 100%;
-    position: relative;
-    width: 70%;
-    border: none;
-    outline: none;
-    border-bottom: 3px solid var(--bg-color);
-    font-size: 16px;
-}
- 
-.search-box button{
-    padding: 15px 0;
-    width: 25%;
-    background-color: var(--bg-color);
-    border: none;
-    outline: none;
-    color: var(--bg-container);
-    border-radius: 5px;     
+.search-box input {
+  width: 100%;
+  position: relative;
+  width: 70%;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid var(--bg-color);
+  font-size: 16px;
 }
 
-
- /* -------- Result Section -------- */
-.result{
-    position: relative;
+.search-box button {
+  padding: 15px 0;
+  width: 25%;
+  background-color: var(--bg-color);
+  border: none;
+  outline: none;
+  color: var(--bg-container);
+  border-radius: 5px;
 }
 
-.result h3{
-    font-size: 30px;
-    color: #1f194c;
+/* -------- Result Section -------- */
+.result {
+  position: relative;
 }
 
-.result .word{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 80px;
+.result h3 {
+  font-size: 30px;
+  color: #1f194c;
+}
+
+.result .word {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
 }
 
 .result button {
-    background-color: transparent;
-    color: var(--bg-color);
-    border: none;
-    outline: none;
-    font-size: 18px;
+  background-color: transparent;
+  color: var(--bg-color);
+  border: none;
+  outline: none;
+  font-size: 18px;
 }
 
-.result .details{
-    display: flex; 
-    gap: 10px;
-    color: #b3b6d4;
-    margin: 5px 0 20px 0;
-    font-size: 14px;
+.result .details {
+  display: flex;
+  gap: 10px;
+  color: #b3b6d4;
+  margin: 5px 0 20px 0;
+  font-size: 14px;
 }
 
 /* ----- Meaning Section -----  */
 .word-meaning {
-    color: #575a7b; 
+  color: #575a7b;
 }
 .word-example {
-    color: #575a7b;
-    font-style: italic;
-    border-left: 5px solid var(--bg-color);
-    padding-left: 20px;
-    margin-top: 30px;
+  color: #575a7b;
+  font-style: italic;
+  border-left: 5px solid var(--bg-color);
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--bg-color);
+  padding: 8px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5%;
+  height: 50px;
+}
+
+.navbar .logo {
+  cursor: pointer;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.nav-links {
+  color: var(--bg-color);
 }

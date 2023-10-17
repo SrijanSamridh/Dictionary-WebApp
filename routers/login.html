@@ -21,30 +21,40 @@
 
   <body>
     <div class="container">
-      <form method="POST" action="https://dictionary-server-six.vercel.app/auth/login">
+      <form
+        method="POST"
+        action="https://dictionary-server-six.vercel.app/auth/login"
+      >
         <h2>Login</h2>
-        <div class="input-group">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="input-filed"
-            required
-          />
-        </div>
-        <div class="input-group">
-          <label for="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            class="input-filed"
-            required
-          />
-        </div>
+        <table>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="input-filed"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="input-filed"
+                required
+              />
+            </td>
+          </tr>
+        </table>
         <button type="submit" id="btn" class="btn">Login</button>
       </form>
+      <h4>Don't have an Account? <a href="signup.html" >Sign Up</a></h4>
     </div>
 
     <script>
