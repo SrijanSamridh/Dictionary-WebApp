@@ -16,10 +16,17 @@
 
     <!-- Stylesheet-->
     <link rel="stylesheet" href="../auth/style.css" />
+    <link rel="stylesheet" href="../utils/loader.css" />
     <title>Dictionary</title>
   </head>
 
   <body>
+    <div class="loader">
+      <div class="loader-content zoomIn">
+        <img src="../assets/logo.png" alt="" id="logo" class="logo" />
+      </div>
+    </div>
+
     <div class="container">
       <form
         method="POST"
@@ -54,18 +61,23 @@
         </table>
         <button type="submit" id="btn" class="btn">Login</button>
       </form>
-      <h4>Don't have an Account? <a href="signup.html" >Sign Up</a></h4>
+      <h4>Don't have an Account? <a href="signup.html">Sign Up</a></h4>
     </div>
 
     <script>
       const baseUrl = "https://dictionary-server-six.vercel.app";
       const btn = document.getElementById("btn");
+      const loader = document.querySelector(".loader");
 
       btn.addEventListener("click", (event) => {
         event.preventDefault();
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
+        signIn(baseUrl, email, password);
+      });
 
+      function signIn(baseUrl, email, password) {
+        loader.style.display = "block";
         fetch(`${baseUrl}/auth/login`, {
           method: "POST",
           headers: {
@@ -75,7 +87,7 @@
         })
           .then((response) => response.json())
           .then((data) => {
-            alert(data.message);
+            // alert(data.message);
             if (data.message === "User logged in successfully!") {
               console.log("Successful");
               // Redirect to a dashboard or perform other actions
@@ -84,8 +96,11 @@
           })
           .catch((error) => {
             console.error("Error:", error);
+          })
+          .finally(() => {
+            loader.style.display = "none";
           });
-      });
+      }
     </script>
   </body>
 </html>

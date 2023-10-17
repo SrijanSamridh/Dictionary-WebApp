@@ -1,5 +1,6 @@
 const baseUrl = "https://dictionary-server-six.vercel.app";
 const signup_btn = document.getElementById("signup-btn");
+const loader = document.querySelector(".loader");
 
 signup_btn.addEventListener("click", (event) => {
   event.preventDefault();
@@ -11,6 +12,8 @@ signup_btn.addEventListener("click", (event) => {
 
 // Sending a POST request to the API
 function signUp(baseUrl, username, email, password) {
+  loader.style.display = "block";
+
   fetch(`${baseUrl}/auth/register`, {
     method: "POST",
     headers: {
@@ -29,5 +32,9 @@ function signUp(baseUrl, username, email, password) {
     })
     .catch((error) => {
       console.error("Error:", error);
+    })
+    .finally(() => {
+      loader.style.display = "none";
     });
 }
+
