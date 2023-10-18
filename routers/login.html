@@ -75,7 +75,7 @@
       });
 
       function signIn(baseUrl, email, password) {
-        loader.style.display = "block";
+        loader.style.visibility = "visible";
         fetch(`${baseUrl}/auth/login`, {
           method: "POST",
           headers: {
@@ -97,7 +97,7 @@
             console.error("Error:", error);
           })
           .finally(() => {
-            loader.style.display = "none";
+            loader.style.visibility = "hidden";
           });
       }
       function validateForm() {
