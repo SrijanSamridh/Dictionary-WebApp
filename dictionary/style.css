@@ -152,17 +152,32 @@ body {
   border-radius: 50%;
 }
 
+.nav-links li{
+  letter-spacing: 3px;
+  font-weight:bolder;
+  color: var(--secondary-color);
+}
+.bottom-nav {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
+  .nav-links li{
+    display: none;
+  }
+  .bottom-nav{
+    display: block;
+  }
   .navbar {
-    margin: 10px auto;
     bottom: 0;
     left: 0;
   }
 
   .navbar-content {
+    margin: 10px;
     background-color: #8c52fffb;
     border-radius: 20px 20px 20px 20px;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .navbar-content ul {
@@ -171,5 +186,9 @@ body {
 
   .navbar-content a{
     color: aliceblue;
+  }
+
+  .navbar-content a:hover {
+    color: var(--bg-container);
   }
 }

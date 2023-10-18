@@ -1,53 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="../assets/logo_background.png"
-      type="image/x-icon"
-    />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <!-- Google Fonts -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-    />
 
-    <!-- Stylesheet-->
-    <link rel="stylesheet" href="../dictionary/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../assets/logo_background.png" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" />
 
-    <title>Dictionary</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="navbar-content">
-        <img src="../assets/logo_background.png" alt="" id="logo" class="logo" onclick="location.href='#'" />
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+  <!-- Stylesheet-->
+  <link rel="stylesheet" href="../dictionary/style.css" />
+
+  <title>Dictionary</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-content">
+      <img src="../assets/logo_background.png" alt="" id="logo" class="logo" onclick="location.href='#'" />
+      <ul class="nav-links">
+        <li>MY DICTIONARY APP</li>
+      </ul>
+      <ul class="bottom-nav">
+        <li>
+          <a href="">See what you searched <i class="fas fa-question-circle"></i></a>
+        </li>
+      </ul>
+  </nav>
+
+  <section>
+    <audio id="sound"></audio>
+    <div class="container">
+      <div class="search-box">
+        <input type="text" placeholder="Type the word here.." id="inp-word" />
+        <button id="search-btn">Search</button>
       </div>
-    </nav>
-    
-    <section>
-      <audio id="sound"></audio>
-      <div class="container">
-        <div class="search-box">
-          <input type="text" placeholder="Type the word here.." id="inp-word" />
-          <button id="search-btn">Search</button>
-        </div>
-        <div class="result" id="result"></div>
-      </div>
-    </section>
+      <div class="result" id="result"></div>
+    </div>
+  </section>
 
-    <!-- Script -->
-    <script src="../dictionary/script.js"></script>
-  </body>
+  <!-- Script -->
+  <script src="../dictionary/script.js"></script>
+</body>
+
 </html>
