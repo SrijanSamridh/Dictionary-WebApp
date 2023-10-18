@@ -9,7 +9,7 @@
 }
 :root {
   --bg-color: #ae9cff;
-  --bg-container: #ffffff;
+  --bg-container: #fff;
 }
 body {
   background-color: var(--bg-color);
@@ -97,30 +97,10 @@ body {
   margin-top: 30px;
 }
 
-/* Navbar Styles */
-.navbar {
-  background-color: var(--bg-color);
-  padding: 8px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 5%;
-  height: 50px;
-}
-
-.navbar .logo {
-  cursor: pointer;
-  height: 80px;
-  border-radius: 50%;
-}
-
-.nav-links {
-  color: var(--bg-color);
+.word-error{
+  color: #b83333;
+  font-style: italic;
+  border-left: 5px solid #b83333;
+  padding-left: 20px;
+  margin-top: 30px;
 }

@@ -9,8 +9,8 @@ btn.addEventListener("click", () => {
     console.log(inpWord.value);
     if(!inpWord) {
       result.innerHTML = `
-          <p class="word-example">
-          Please Enter A word to be searched!
+          <p class="word-error">
+          Please enter a word to be searched!
           </p>`;
       redirectToIndex();
     }
