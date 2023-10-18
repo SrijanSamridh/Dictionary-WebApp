@@ -19,7 +19,7 @@
   padding: 20px;
   border-radius: 20px;
   animation-name: zoomIn;
-  animation-duration: 0.5s;
+  animation-duration: 2s;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,5 +41,5 @@
   width: 100px; /* Adjust the width as needed */
   height: 100px; /* Adjust the height as needed */
   animation-name: zoomIn;
-  animation: zoomIn 3s infinite;
+  animation: zoomIn 1000ms infinite;
 }

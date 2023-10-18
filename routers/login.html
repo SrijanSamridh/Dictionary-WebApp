@@ -30,12 +30,12 @@
     <div class="container">
       <form
         method="POST"
-        action="https://dictionary-server-six.vercel.app/auth/login"
+        action="https://dictionary-server-six.vercel.app/auth/login",
       >
         <h2>Login</h2>
         <table>
           <tr>
-            <td><label for="email">Email</label></td>
+            <td><label for="email">Email *</label></td>
             <td>
               <input
                 type="email"
@@ -47,7 +47,7 @@
             </td>
           </tr>
           <tr>
-            <td><label for="password">Password</label></td>
+            <td><label for="password">Password *</label></td>
             <td>
               <input
                 type="password"
@@ -71,9 +71,7 @@
 
       btn.addEventListener("click", (event) => {
         event.preventDefault();
-        const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
-        signIn(baseUrl, email, password);
+        validateForm();
       });
 
       function signIn(baseUrl, email, password) {
@@ -87,11 +85,12 @@
         })
           .then((response) => response.json())
           .then((data) => {
-            // alert(data.message);
             if (data.message === "User logged in successfully!") {
               console.log("Successful");
               // Redirect to a dashboard or perform other actions
               window.location.href = "dictionary.html";
+            } else {
+              alert(data.message);
             }
           })
           .catch((error) => {
@@ -100,6 +99,23 @@
           .finally(() => {
             loader.style.display = "none";
           });
+      }
+      function validateForm() {
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        // Defining a regular expression pattern for a valid email address
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+        if (email.trim() === "" || password.trim() === "") {
+          alert("Email and password are required");
+          return;
+        }
+        if (!emailPattern.test(email)) {
+          alert("Invalid email format");
+          return;
+        }
+        signIn(baseUrl, email, password);
       }
     </script>
   </body>
