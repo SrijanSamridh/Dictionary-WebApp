@@ -28,7 +28,7 @@ function validateForm() {
 
 // Sending a POST request to the API
 function signUp(baseUrl, username, email, password) {
-  loader.style.display = "block";
+  // loader.style.display = "block";
 
   fetch(`${baseUrl}/auth/register`, {
     method: "POST",
