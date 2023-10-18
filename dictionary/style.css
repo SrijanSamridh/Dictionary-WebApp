@@ -10,6 +10,8 @@
 :root {
   --bg-color: #ae9cff;
   --bg-container: #fff;
+  --text-hover: #333;
+  --secondary-color: #8c52ff;
 }
 body {
   background-color: var(--bg-color);
@@ -97,10 +99,77 @@ body {
   margin-top: 30px;
 }
 
-.word-error{
+.word-error {
   color: #b83333;
   font-style: italic;
   border-left: 5px solid #b83333;
   padding-left: 20px;
   margin-top: 30px;
+}
+
+/* Navigation bar styles */
+.navbar {
+  margin: 10px auto;
+  width: 100%;
+  position: fixed;
+  color: var(--bg-color);
+  z-index: 999;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--bg-container);
+}
+
+.navbar-content ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-content li {
+  list-style: none;
+}
+
+.navbar-content a {
+  text-decoration: none;
+  color: var(--bg-color);
+  margin: 0 10px;
+}
+
+.navbar-content a:hover {
+  color: var(--secondary-color);
+}
+
+.navbar #logo {
+  height: 50px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    margin: 10px auto;
+    bottom: 0;
+    left: 0;
+  }
+
+  .navbar-content {
+    background-color: #8c52fffb;
+    border-radius: 20px 20px 20px 20px;
+    justify-content: space-evenly;
+  }
+
+  .navbar-content ul {
+    justify-content: space-evenly;
+  }
+
+  .navbar-content a{
+    color: aliceblue;
+  }
 }

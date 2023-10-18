@@ -25,16 +25,27 @@
     <title>Dictionary</title>
   </head>
   <body>
-    <!-- <section> -->
-    <audio id="sound"></audio>
-    <div class="container">
-      <div class="search-box">
-        <input type="text" placeholder="Type the word here.." id="inp-word" />
-        <button id="search-btn">Search</button>
+    <nav class="navbar">
+      <div class="navbar-content">
+        <img src="../assets/logo_background.png" alt="" id="logo" class="logo" onclick="location.href='#'" />
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-      <div class="result" id="result"></div>
-    </div>
-    <!-- </section> -->
+    </nav>
+    
+    <section>
+      <audio id="sound"></audio>
+      <div class="container">
+        <div class="search-box">
+          <input type="text" placeholder="Type the word here.." id="inp-word" />
+          <button id="search-btn">Search</button>
+        </div>
+        <div class="result" id="result"></div>
+      </div>
+    </section>
 
     <!-- Script -->
     <script src="../dictionary/script.js"></script>
