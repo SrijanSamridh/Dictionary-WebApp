@@ -29,7 +29,13 @@
       <!-- Navigation Bar -->
       <nav class="navbar">
         <div class="container">
-          <img src="assets/logo.png" alt="" id="logo" class="logo" onclick="location.href='#'" />
+          <img
+            src="assets/logo.png"
+            alt=""
+            id="logo"
+            class="logo"
+            onclick="location.href='#'"
+          />
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#features">Features</a></li>
@@ -80,22 +86,81 @@
       <!-- Features Section -->
       <section id="features" class="features">
         <div class="container">
-          <h2>Features</h2>
-          <ul>
-            <li>Feature 1</li>
-            <li>Feature 2</li>
-            <li>Feature 3</li>
-          </ul>
+          <div>
+            <h2>Features</h2>
+            <div class="container">
+              <div class="card">
+                <img
+                  src="https://cdn.pixabay.com/photo/2020/01/16/17/21/pantheon-4771206_1280.jpg"
+                  alt=""
+                />
+                <h3>Search Meaning of words</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum, quibusdam.
+                </p>
+                <button onclick="location.href='routers/dictionary.html'" >Try Now</button>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.pixabay.com/photo/2017/08/07/19/07/books-2606859_1280.jpg"
+                  alt=""
+                />
+                <h3>See Your Search History</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum, quibusdam.
+                </p>
+                <button onclick="location.href='routers/history.html'">Try Now</button>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.pixabay.com/photo/2021/06/01/16/15/island-6302137_1280.jpg"
+                  alt=""
+                />
+                <h3>Add your Own Words</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum, quibusdam.
+                </p>
+                <button onclick="location.href='routers/history.html'">Try Now</button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Contact Section -->
       <section id="contact" class="contact">
         <div class="container">
-          <h2>Contact Us</h2>
-          <p>Contact information goes here.</p>
+          <div>
+            <h2>Contact Us</h2>
+            <div class="container">
+              <div>
+                <p>Contact information goes here.</p>
+                <br />
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Address : Lorem, ipsum dolor.</span>
+                <br />
+                <i class="fas fa-phone-alt"></i>
+                <span>Phone : +91 9128374650</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      <!-- Footer Section -->
+      <footer class="footer"></footer>
+      <marquee
+        width="100%"
+        direction="right"
+        height="fit-content"
+        style="color: dimgray; font-size: 12px"
+      >
+        &copy; 2023 My Dictionary App Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Natus, voluptatum.
+      </marquee>
     </div>
 
     <script src="home/script.js"></script>

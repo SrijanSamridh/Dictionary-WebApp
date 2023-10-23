@@ -96,7 +96,7 @@ h1 {
 
   .navbar-content {
     margin: 10px;
-    background-color: hsla(260, 100%, 66%, 0.716);
+    background-color: hsl(260, 100%, 66%);
     border-radius: 20px 20px 20px 20px;
     justify-content: space-between;
   }
@@ -215,12 +215,11 @@ table tbody tr:nth-child(odd), table tbody tr:nth-child(odd) td {
   cursor: pointer;
 }
 
-#clearBtn{
+.clearBtn{
   width: 10%;
   border: none;
   outline: none;
   background-color: var(--secondary-color);
   color: var(--bg-container);
   border-radius: 0 10px 10px 0;
-
 }
