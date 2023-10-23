@@ -2,7 +2,7 @@
 
 > <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&random=false&width=435&lines=Search+for+words+and+their+meanings" alt="Typing SVG" /></a>
 
-# Dictionary Application
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=900&duration=4000&pause=1000&color=9053F7&random=false&width=435&lines=Dictionary+Application" alt="Typing SVG" /></a>
 
 <img width="1680" alt="Screenshot 2023-10-24 at 1 53 31 AM" src="https://github.com/SrijanSamridh/Dictionary-WebApp/assets/74289654/c2a4ebe5-06d2-457b-9a2b-4ce774b6d234">
 
