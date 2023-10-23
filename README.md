@@ -1,11 +1,6 @@
-[]: # BEGIN: 7f6b5d8d0d4c
-
 # Dictionary Application
 
-<div class="typing-animation">
-    <h1>Search for words and their meanings</h1>
-    <div class="typing-dot"></div>
-</div>
+> <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&random=false&width=435&lines=Search+for+words+and+their+meanings" alt="Typing SVG" /></a>
 
 This is a web application for a dictionary that includes all the dictionary features, as well as a search history feature. The application is built using the following tech stacks:
 
@@ -39,44 +34,4 @@ Guidelines on how to contribute to the project can be found in the [CONTRIBUTING
 ## License
 
 Information about the license for the project can be found in the [LICENSE.md](./LICENSE.md) file.
-
-<style>
-    .typing-animation {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 200px;
-        position: relative;
-    }
-
-    .typing-dot {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: #000;
-        animation: typing 1s infinite;
-    }
-
-    @keyframes typing {
-        0% {
-            transform: translateX(-50%) translateY(0);
-            opacity: 1;
-        }
-        50% {
-            transform: translateX(-50%) translateY(10px);
-            opacity: 0.5;
-        }
-        100% {
-            transform: translateX(-50%) translateY(0);
-            opacity: 1;
-        }
-    }
-</style>
-[]: # END: 7f6b5d8d0d4c
-
 
