@@ -12,6 +12,13 @@ This is a web application for a dictionary that includes all the dictionary feat
 
 The project is deployed using Vercel.
 
+The application fetches the meaning of words from the following API:
+
+shell```
+> `https://api.dictionaryapi.dev/api/v2/entries/en/`. 
+
+
+
 ## Table of Contents
 
 - [Installation](#installation)
