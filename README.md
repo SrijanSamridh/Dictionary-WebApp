@@ -2,42 +2,58 @@
 
 > <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&random=false&width=435&lines=Search+for+words+and+their+meanings" alt="Typing SVG" /></a>
 
-This is a web application for a dictionary that includes all the dictionary features, as well as a search history feature. The application is built using the following tech stacks:
+<!-- Title -->
+<h1 align="center">Dictionary Magic 📚✨</h1>
 
-- <img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/> JavaScript
-- <img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/> HTML
-- <img src="https://img.icons8.com/color/48/000000/css3.png"/> CSS
-- <img src="https://img.icons8.com/color/48/000000/mongodb.png"/> MongoDB
-- <img src="https://img.icons8.com/color/48/000000/nodejs.png"/> Node.js API
+<!-- Badges -->
+<p align="center">
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" />
+  <img src="https://img.shields.io/badge/Version-1.0-brightgreen" alt="Version" />
+  <img src="https://img.shields.io/badge/Contributions-Welcome-orange.svg" alt="Contributions" />
+</p>
 
-The project is deployed using Vercel.
+<!-- Description -->
+<p align="center">Unleash the power of words with Dictionary Magic, where language comes alive!</p>
 
-The application fetches the meaning of words from the following API:
+<!-- Table of Contents -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about-the-project">About</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#tech-stack">Tech Stack</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+  </ol>
+</details>
 
- `https://api.dictionaryapi.dev/api/v2/entries/en/`. 
+<!-- About the Project -->
+## About the Project
 
+Dictionary Magic is your gateway to the world of words. It's more than just a dictionary; it's a journey through language. Explore words, discover meanings, and uncover the beauty of communication.
 
+![App Screenshot](screenshot.png)
 
-## Table of Contents
+<!-- Features -->
+## Features
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- 📖 **Word Search**: Find the meaning of any word with a single click.
+- 🕒 **Search History**: Track your recent searches for quick reference.
+- 🎨 **Sleek Design**: Enjoy an elegant and intuitive user interface.
 
-## Installation
+<!-- Tech Stack -->
+## Tech Stack
 
-Instructions on how to install and run the project can be found in the [INSTALLATION.md](./INSTALLATION.md) file.
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Node.js, MongoDB
+- **API**: [DictionaryAPI](https://api.dictionaryapi.dev/api/v2/entries/en/)
 
-## Usage
+<!-- Getting Started -->
+## Getting Started
 
-Instructions on how to use the project can be found in the [USAGE.md](./USAGE.md) file.
-
-## Contributing
-
-Guidelines on how to contribute to the project can be found in the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
-
-## License
-
-Information about the license for the project can be found in the [LICENSE.md](./LICENSE.md) file.
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/your-username/dictionary-magic.git
 
