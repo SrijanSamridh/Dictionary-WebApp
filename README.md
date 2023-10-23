@@ -10,7 +10,7 @@
 
 The Dictionary Application is a web-based dictionary tool that allows users to search for words and their meanings. It features a user-friendly interface, word history tracking, and seamless access to word definitions.
 
-- Live Demo: [https;//dictionary.srijansamridh.tech]([https://dic.com](https://dictionary.srijansamridh.tech))
+- Live Demo: [click Now]([https://dic.com](https://dictionary.srijansamridh.tech))
 
 ## Features
 
