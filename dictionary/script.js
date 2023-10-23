@@ -3,19 +3,19 @@ const result = document.getElementById("result");
 const sound = document.getElementById("sound");
 
 const btn = document.getElementById("search-btn");
+let boxInformation = JSON.parse(localStorage.getItem("boxInformation")) || [];
 
 btn.addEventListener("click", () => {
-    let inpWord = document.getElementById("inp-word").value.trim();
-    console.log(inpWord.value);
-    if(!inpWord) {
-      result.innerHTML = `
+  let inpWord = document.getElementById("inp-word").value.trim();
+  console.log(inpWord.value);
+  if (!inpWord) {
+    result.innerHTML = `
           <p class="word-error">
           Please enter a word to be searched!
           </p>`;
-      redirectToIndex();
-    }
-    else{
-      fetch(`${url}${inpWord}`)
+    redirectToIndex();
+  } else {
+    fetch(`${url}${inpWord}`)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
@@ -43,6 +43,17 @@ btn.addEventListener("click", () => {
           // if sound is not available hide the sound button
           document.getElementById("speak").style.display = "none";
         }
+        if (
+          inpWord === "" ||
+          data[0].meanings[0].definitions[0].definition === ""
+        ) {
+          // alert("Please fill out the form");
+        } else {
+          addWordToHistory(
+            inpWord,
+            data[0].meanings[0].definitions[0].definition
+          );
+        }
         console.log(sound);
       })
       .catch(() => {
@@ -60,11 +71,16 @@ btn.addEventListener("click", () => {
               No example found
           </p>`;
       });
-    }
-  });
-  
-  
+  }
+});
 
 function playSound() {
   sound.play();
+}
+
+// Function to add a word to the search history.
+function addWordToHistory(word, meaning) {
+  let wordObject = { word, meaning };
+  boxInformation.push(wordObject);
+  localStorage.setItem("boxInformation", JSON.stringify(boxInformation));
 }

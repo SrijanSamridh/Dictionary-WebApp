@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../assets/logo_background.png" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" />
+
+  <!-- Stylesheet-->
+  <link rel="stylesheet" href="../history/style.css" />
+  <link rel="stylesheet" href="../utils/splash.css" />
+  <link rel="stylesheet" href="../utils/animation.css" />
+  <title>Dictionary</title>
+</head>
+
+<body>
+  <div class="splash">
+    <div class="splash-content zoom-out">
+      <img src="../assets/logo.png" alt="" id="logo" class="logo" />
+    </div>
+  </div>
+
+  <div class="main-content">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-content">
+        <img src="../assets/logo_background.png" alt="" id="logo" class="logo"
+          onclick="location.href='../index.html'" />
+        <ul class="nav-links">
+          <li>Your Search History</li>
+        </ul>
+        <ul class="bottom-nav">
+          <li>
+            <a href="dictionary.html">search for more knowlegde <i class="fas fa-lightbulb"></i></a>
+          </li>
+        </ul>
+    </nav>
+
+    <!-- Add records  -->
+    <form action="" class="container">
+      <h1>Add Records</h1>
+      <input id="word" type="text" class="form-control" />
+      <input id="meaning" type="text" class="form-control" />
+      <button id="btnSubmit">Add Data</button>
+    </form>
+
+    <!-- Search Bar  -->
+    <div class="search">
+      <div class="search-icon"><i class="fa fa-search"></i></div>
+      <input id="inputSearch" class="form-control" placeholder="Search by word" type="text">
+      <button id="clearBtn">Clear All</button>
+    </div>
+
+
+    <!-- Display Table  -->
+    <table class="table container table-container">
+      <thead>
+        <th>SL/No</th>
+        <th>WORD</th>
+        <th>MEANING</th>
+        <th>ACTION</th>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+
+
+  <script src="../history/script.js"></script>
+  <script src="../home/script.js"></script>
+</body>
+
+</html>

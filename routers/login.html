@@ -62,6 +62,7 @@
         </table>
         <button type="submit" id="btn" class="btn">Login</button>
       </form>
+      <!-- <div id="error-m">login to continue</div> -->
       <h4>Don't have an Account? <a href="signup.html">Sign Up</a></h4>
     </div>
 
@@ -109,10 +110,12 @@
         const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
         if (email.trim() === "" || password.trim() === "") {
-          alert("Email and password are required");
+          // error_msg.textContent = "Email and password are required";
+          alert("Email and password are required");          
           return;
         }
         if (!emailPattern.test(email)) {
+          // error_msg.textContent = "Invalid email format";
           alert("Invalid email format");
           return;
         }

@@ -1,6 +1,7 @@
 const baseUrl = "https://dictionary-server-six.vercel.app";
 const signup_btn = document.getElementById("signup-btn");
 const loader = document.querySelector(".loader");
+const error_msg = document.getElementById("error"); 
 
 signup_btn.addEventListener("click", (event) => {
   event.preventDefault();
