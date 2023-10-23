@@ -14,8 +14,8 @@ The project is deployed using Vercel.
 
 The application fetches the meaning of words from the following API:
 
-shell```
-> `https://api.dictionaryapi.dev/api/v2/entries/en/`. 
+bash```
+ `https://api.dictionaryapi.dev/api/v2/entries/en/`. 
 
 
 
