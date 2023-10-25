@@ -72,5 +72,4 @@ function updateData() {
 const clearBtn = document.getElementById("clearBtn");
 clearBtn.addEventListener("click", function () {
   localStorage.removeItem('boxInformation');
-  displayBox();
 });
