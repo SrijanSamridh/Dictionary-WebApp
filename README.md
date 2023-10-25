@@ -22,7 +22,7 @@ The Dictionary Application is a web-based dictionary tool that allows users to s
 
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Node.js, MongoDB
-- **API:** [DictionaryAPI](https://api.dictionaryapi.dev/api/v2/entries/en/)
+- **API:** [DictionaryAPI-https://api.dictionaryapi.dev/api/v2/entries/en/word](https://api.dictionaryapi.dev/api/v2/entries/en/)
 
 ## Installation
 
